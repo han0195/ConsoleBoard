@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-
+sfsdfsef
 public class main {
 
 	static Scanner scanner = new Scanner(System.in);
@@ -15,10 +15,10 @@ public class main {
 
 	public static void main(String[] args){
 		try {
-			Controller.°Ô½Ã¹°Ãâ·Â();
-			Controller.È¸¿øÃâ·Â();
-			Controller.Â÷´ÜÃâ·Â();
-			Controller.ÂÊÁöÃâ·Â();
+			Controller.ï¿½Ô½Ã¹ï¿½ï¿½ï¿½ï¿½();
+			Controller.È¸ï¿½ï¿½ï¿½ï¿½ï¿½();
+			Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½();
+			Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½();
 			
 			
 		} catch (IOException e) {
@@ -29,14 +29,14 @@ public class main {
 			scanner = new Scanner(System.in);
 			try {
 				
-					±×¸²();
+					ï¿½×¸ï¿½();
 
-					// ¸Þ´º
-					¸ÞÀÎ¸Þ´º();
+					// ï¿½Þ´ï¿½
+					ï¿½ï¿½ï¿½Î¸Þ´ï¿½();
 
 				
 			} catch (Exception e) {
-				System.err.println("Á¦´ë·ÎµÈ ÀÔ·Â ¹Ù¶÷");
+				System.err.println("ï¿½ï¿½ï¿½ï¿½Îµï¿½ ï¿½Ô·ï¿½ ï¿½Ù¶ï¿½");
 			}
 		}
 		
@@ -45,33 +45,33 @@ public class main {
 		
 	}
 
-	public static void ·Î±×ÀÎ¸Þ´º(String id) throws IOException {
+	public static void ï¿½Î±ï¿½ï¿½Î¸Þ´ï¿½(String id) throws IOException {
 		while (true) {
-			//////////////////////////////////////////// ÀÎ±â±ÛÃâ·Â
-//////////////////////////////////////////////ÀÎ±â±ÛÃâ·Â
-			for (int i = 0; i < Controller.Ä«Å×°í¸®.length; i++) {
-				ArrayList<Board> ÀÎ±â±Û = Controller.ÀÎ±â±Û(Controller.Ä«Å×°í¸®[i]); // °¢ Ä«Å×°í¸® ÀÎ±â±Û °¡Á®¿À±â
+			//////////////////////////////////////////// ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½
+//////////////////////////////////////////////ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½
+			for (int i = 0; i < Controller.Ä«ï¿½×°ï¿½.length; i++) {
+				ArrayList<Board> ï¿½Î±ï¿½ï¿½ = Controller.ï¿½Î±ï¿½ï¿½(Controller.Ä«ï¿½×°ï¿½[i]); // ï¿½ï¿½ Ä«ï¿½×°ï¿½ ï¿½Î±ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				System.out
-						.println("---------------------Ä«Å×°í¸®: " + Controller.Ä«Å×°í¸®[i] + "-----------------------------");
-				System.out.println("Á¦¸ñ\t\t³»¿ë\t\t±Û¹øÈ£\t\tÃßÃµ¼ö");
-				for (int j = 0; j < ÀÎ±â±Û.size(); j++) {
-					if (ÀÎ±â±Û.size() != 0) {
-						String ³»¿ë = "";
-						for (int s = 0; s < ÀÎ±â±Û.get(j).getContent().length(); s++) {
-							³»¿ë += ÀÎ±â±Û.get(j).getContent().charAt(s);
+						.println("---------------------Ä«ï¿½×°ï¿½: " + Controller.Ä«ï¿½×°ï¿½[i] + "-----------------------------");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½\t\tï¿½ï¿½ï¿½ï¿½\t\tï¿½Û¹ï¿½È£\t\tï¿½ï¿½Ãµï¿½ï¿½");
+				for (int j = 0; j < ï¿½Î±ï¿½ï¿½.size(); j++) {
+					if (ï¿½Î±ï¿½ï¿½.size() != 0) {
+						String ï¿½ï¿½ï¿½ï¿½ = "";
+						for (int s = 0; s < ï¿½Î±ï¿½ï¿½.get(j).getContent().length(); s++) {
+							ï¿½ï¿½ï¿½ï¿½ += ï¿½Î±ï¿½ï¿½.get(j).getContent().charAt(s);
 							if (s == 9) {
 								break;
 							}
 						}
-						String Á¦¸ñ = "";
-						for (int s = 0; s < ÀÎ±â±Û.get(j).getTitle().length(); s++) {
-							Á¦¸ñ += ÀÎ±â±Û.get(j).getTitle().charAt(s);
+						String ï¿½ï¿½ï¿½ï¿½ = "";
+						for (int s = 0; s < ï¿½Î±ï¿½ï¿½.get(j).getTitle().length(); s++) {
+							ï¿½ï¿½ï¿½ï¿½ += ï¿½Î±ï¿½ï¿½.get(j).getTitle().charAt(s);
 							if (s == 9) {
 								break;
 							}
 						}
-						System.out.println(String.format("%-15s", Á¦¸ñ)+ String.format("%-15s", ³»¿ë)
-								+ ÀÎ±â±Û.get(j).getIndex() + "\t\t" + ÀÎ±â±Û.get(j).getGood());
+						System.out.println(String.format("%-15s", ï¿½ï¿½ï¿½ï¿½)+ String.format("%-15s", ï¿½ï¿½ï¿½ï¿½)
+								+ ï¿½Î±ï¿½ï¿½.get(j).getIndex() + "\t\t" + ï¿½Î±ï¿½ï¿½.get(j).getGood());
 
 					}
 					if (j == 4) {
@@ -83,23 +83,23 @@ public class main {
 			///////////////////////////////////////////////////
 
 			System.out.println("-------------");
-			System.out.println("|1.Ä«Å×°í¸® ¼±ÅÃ|");
+			System.out.println("|1.Ä«ï¿½×°ï¿½ ï¿½ï¿½ï¿½ï¿½|");
 			System.out.println("-------------");
 			System.out.println();
 			System.out.println("--------");
-			System.out.println("|2.³îÀÌ¹æ|");
+			System.out.println("|2.ï¿½ï¿½ï¿½Ì¹ï¿½|");
 			System.out.println("--------");
 			System.out.println();
 			System.out.println("------------------");
-			System.out.println("|3.ÂÊÁö º¸³»±â|");
+			System.out.println("|3.ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½|");
 			System.out.println("------------------");
 			System.out.println();
 			System.out.println("-----------");
-			System.out.println("|4.ÂÊÁöÈ®ÀÎ|");
+			System.out.println("|4.ï¿½ï¿½ï¿½ï¿½È®ï¿½ï¿½|");
 			System.out.println("-----------");
 			System.out.println();
 			System.out.println("----------");
-			System.out.println("|5.·Î±×¾Æ¿ô|");
+			System.out.println("|5.ï¿½Î±×¾Æ¿ï¿½|");
 			System.out.println("----------");
 			System.out.println();
 
@@ -113,134 +113,134 @@ public class main {
 			System.out.println("\t\t\t");
 			System.out.println("\t\t\t");
 			System.out.println("\t\t\t");
-			System.out.print("¹øÈ£: ");
+			System.out.print("ï¿½ï¿½È£: ");
 			int ch = scanner.nextInt();
 			if (ch == 1) {
-				Ä«Å×°í¸®¸Þ´º(id);
+				Ä«ï¿½×°ï¿½ï¿½Þ´ï¿½(id);
 			} else if (ch == 2) {
-				³îÀÌ¹æ¸Þ´º(id);
-			} else if (ch == 3) { // ÂÊÁö º¸³»±â
-				System.out.println("¹Þ´Â »ç¶÷ id: ");
+				ï¿½ï¿½ï¿½Ì¹ï¿½Þ´ï¿½(id);
+			} else if (ch == 3) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				System.out.println("ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ id: ");
 				String receiveid = scanner.next();
 				scanner.nextLine();
-				System.out.println("³»¿ë: ");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½: ");
 				String con = scanner.nextLine();
 
-				boolean pass = Controller.ÂÊÁöº¸³»±â(receiveid, id, con);
+				boolean pass = Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(receiveid, id, con);
 				if (pass) {
-					System.out.println("¼º°ø");
+					System.out.println("ï¿½ï¿½ï¿½ï¿½");
 				} else {
-					System.out.println("½ÇÆÐ");
+					System.out.println("ï¿½ï¿½ï¿½ï¿½");
 				}
-			} else if (ch == 4) { // ÂÊÁöÈ®ÀÎ
+			} else if (ch == 4) { // ï¿½ï¿½ï¿½ï¿½È®ï¿½ï¿½
 				for (Acount temp : Controller.acountlist) {
 					if (temp.getId().equals(id)) {
-						for (ÂÊÁöÅ¬·¡½º temp2 : temp.getÂÊÁö()) {
+						for (ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ temp2 : temp.getï¿½ï¿½ï¿½ï¿½()) {
 							System.out.println("--------------------------------------------");
-							System.out.print("¹øÈ£ : " + temp2.get¹øÈ£() + "\t");
-							System.out.print("º¸³½»ç¶÷ : " + temp2.get¹Þ´Â»ç¶÷() + "\t");
-							System.out.print("¹Þ´Â»ç¶÷ : " + temp2.getº¸³½»ç¶÷() + "\n");
-							System.out.print("³»¿ë : " + temp2.get³»¿ë() + "\n");
+							System.out.print("ï¿½ï¿½È£ : " + temp2.getï¿½ï¿½È£() + "\t");
+							System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + temp2.getï¿½Þ´Â»ï¿½ï¿½() + "\t");
+							System.out.print("ï¿½Þ´Â»ï¿½ï¿½ : " + temp2.getï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½() + "\n");
+							System.out.print("ï¿½ï¿½ï¿½ï¿½ : " + temp2.getï¿½ï¿½ï¿½ï¿½() + "\n");
 							System.out.println("--------------------------------------------");
 						}
 					}
 				}
-			} else if (ch == 5) { // ·Î±×¾Æ¿ô
+			} else if (ch == 5) { // ï¿½Î±×¾Æ¿ï¿½
 				scanner = new Scanner(System.in);
 				try {
-					±×¸²();
-					¸ÞÀÎ¸Þ´º();
+					ï¿½×¸ï¿½();
+					ï¿½ï¿½ï¿½Î¸Þ´ï¿½();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			} else {
-				System.out.println("Á¦½ÃµÈ ¹øÈ£ ÀÔ·Â ¹Ù¶÷");
+				System.out.println("ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½È£ ï¿½Ô·ï¿½ ï¿½Ù¶ï¿½");
 			}
 		}
 	}
 
-	public static void Ä«Å×°í¸®¸Þ´º(String id) {
-		for(int i = 0; i < Controller.Ä«Å×°í¸®.length; i++) {
-			System.out.print(i+". "+Controller.Ä«Å×°í¸®[i]+" ");
+	public static void Ä«ï¿½×°ï¿½ï¿½Þ´ï¿½(String id) {
+		for(int i = 0; i < Controller.Ä«ï¿½×°ï¿½.length; i++) {
+			System.out.print(i+". "+Controller.Ä«ï¿½×°ï¿½[i]+" ");
 		}
-		int Ä«Å×°í¸®¼±ÅÃ = scanner.nextInt();
+		int Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ = scanner.nextInt();
 		while (true) {
-			System.out.println("*** " + Controller.Ä«Å×°í¸®[Ä«Å×°í¸®¼±ÅÃ] + " ***");
-			// Ãâ·Â
-			System.out.println("Á¦¸ñ\t\t³»¿ë\t\tÀÛ¼ºÀÚ\t¹øÈ£");
+			System.out.println("*** " + Controller.Ä«ï¿½×°ï¿½[Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½] + " ***");
+			// ï¿½ï¿½ï¿½
+			System.out.println("ï¿½ï¿½ï¿½ï¿½\t\tï¿½ï¿½ï¿½ï¿½\t\tï¿½Û¼ï¿½ï¿½ï¿½\tï¿½ï¿½È£");
 			ArrayList<String> templist = new ArrayList<>();
 			boolean block = true;
 			for (Acount temp2 : Controller.acountlist) {
-				for (Â÷´ÜÀ¯Àú temp : Controller.Â÷´ÜÀ¯Àúlist) {
+				for (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ temp : Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½list) {
 					if (temp2.getId().equals(id) && temp.getIndex().equals(id)) {
 						templist.add(temp.getTarget());
 					}
 				}
 			}
-			if (templist.isEmpty())// Â÷´ÜÀ¯Àú°¡ ºñ¾îÀÖ´Ù¸é
-				block = false; // Â÷´ÜÀ¯Àú ¿©ºÎ ±âº»°ªÀº true¿´´ø°Í
-			if (block) {// Â÷´ÜÀ¯Àú°¡ÀÖ´Ù¸é Ãâ·Â
+			if (templist.isEmpty())// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö´Ù¸ï¿½
+				block = false; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ï¿½ï¿½ trueï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			if (block) {// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´Ù¸ï¿½ ï¿½ï¿½ï¿½
 
 				for (Board temp : Controller.boardlist) {
-					// ³»¿ë ÃÖ´ë 10±ÛÀÚ±îÁö Ãâ·Â
-					String ³»¿ë = ""; 
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ 10ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+					String ï¿½ï¿½ï¿½ï¿½ = ""; 
 					for (int s = 0; s < temp.getContent().length(); s++) {
-						³»¿ë += temp.getContent().charAt(s);
+						ï¿½ï¿½ï¿½ï¿½ += temp.getContent().charAt(s);
 						if (s == 9) {
 							break;
 						} 
 						
 					}
-					// Á¦¸ñ ÃÖ´ë 10±ÛÀÚ±îÁö Ãâ·Â
-					String Á¦¸ñ = "";
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ 10ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+					String ï¿½ï¿½ï¿½ï¿½ = "";
 					for (int s = 0; s < temp.getTitle().length(); s++) {
-						Á¦¸ñ += temp.getTitle().charAt(s);
+						ï¿½ï¿½ï¿½ï¿½ += temp.getTitle().charAt(s);
 						if (s == 9) {
 							break;
 						}
 						
 					} 
-					if (temp.getCategory().equals(Controller.Ä«Å×°í¸®[Ä«Å×°í¸®¼±ÅÃ])) { // Ä«Å×°í¸® °°Àº°Í¸¸
-						if (templist.contains(temp.getWriter())) {				   // Â÷´Ü¸®½ºÆ®¿Í ÀÛ¼º°¡ °°´Ù¸é
-							System.out.println("Â÷´ÜµÈ À¯ÀúÀÇ ±Û");
+					if (temp.getCategory().equals(Controller.Ä«ï¿½×°ï¿½[Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½])) { // Ä«ï¿½×°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½
+						if (templist.contains(temp.getWriter())) {				   // ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½
+							System.out.println("ï¿½ï¿½ï¿½Üµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½");
 						} else {
-							System.out.println(String.format("%-15s", Á¦¸ñ ) + "\t" + String.format("%-15s", ³»¿ë ) + "\t" + temp.getWriter()
+							System.out.println(String.format("%-15s", ï¿½ï¿½ï¿½ï¿½ ) + "\t" + String.format("%-15s", ï¿½ï¿½ï¿½ï¿½ ) + "\t" + temp.getWriter()
 									+ "\t" + temp.getIndex());
 						}
 					}
 
 				}
 
-			} else { // Â÷´ÜÀ¯Àú°¡ ¾øÀ¸¸é
+			} else { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				for (Board temp : Controller.boardlist) {
-					String ³»¿ë = "";
+					String ï¿½ï¿½ï¿½ï¿½ = "";
 					for (int s = 0; s < temp.getContent().length(); s++) {
-						³»¿ë += temp.getContent().charAt(s);
+						ï¿½ï¿½ï¿½ï¿½ += temp.getContent().charAt(s);
 						if (s == 9) {
 							break;
 						}
 						
 					}
-					String Á¦¸ñ = "";
+					String ï¿½ï¿½ï¿½ï¿½ = "";
 					for (int s = 0; s < temp.getTitle().length(); s++) {
-						Á¦¸ñ += temp.getTitle().charAt(s);
+						ï¿½ï¿½ï¿½ï¿½ += temp.getTitle().charAt(s);
 						if (s == 9) {
 							break;
 						}
 						
 					}
-					if (temp.getCategory().equals(Controller.Ä«Å×°í¸®[Ä«Å×°í¸®¼±ÅÃ])) {
-						System.out.println(String.format("%-15s", Á¦¸ñ ) + "\t" + String.format("%-15s", ³»¿ë ) + "\t" + temp.getWriter()
+					if (temp.getCategory().equals(Controller.Ä«ï¿½×°ï¿½[Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½])) {
+						System.out.println(String.format("%-15s", ï¿½ï¿½ï¿½ï¿½ ) + "\t" + String.format("%-15s", ï¿½ï¿½ï¿½ï¿½ ) + "\t" + temp.getWriter()
 						+ "\t" + temp.getIndex());
 					}
 				}
 			}
 
 			templist.clear();
-			System.out.println("------------"); // ±¸ºÐ¼±
+			System.out.println("------------"); // ï¿½ï¿½ï¿½Ð¼ï¿½
 			try {
-				Ä«Å×°í¸®º¸±â(id, Ä«Å×°í¸®¼±ÅÃ);
+				Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½(id, Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -248,9 +248,9 @@ public class main {
 
 		} // while end
 
-	} // Ä«Å×°í¸® ¼±ÅÃ end
+	} // Ä«ï¿½×°ï¿½ ï¿½ï¿½ï¿½ï¿½ end
 
-	public static void ±×¸²() {
+	public static void ï¿½×¸ï¿½() {
 		System.out.println(
 				" -------------------------------------------------------------------------------------------        ");
 		System.out.println(
@@ -264,11 +264,11 @@ public class main {
 		System.out.println(
 				"|             * * *      * * *      * * *        *                    *                    |        ");
 		System.out.println(
-				"|             *     *    *     *    *     *      *                    *       ¿£ÅÍÅ×ÀÎ¸ÕÆ®     |        ");
+				"|             *     *    *     *    *     *      *                    *       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¸ï¿½Æ®     |        ");
 		System.out.println(
 				"|             *     *    *     *    *     *      *                    *                    |        ");
 		System.out.println(
-				"|               * *        * *        * *        **********           *        Ä¿¹Â´ÏÆ¼      /         ");
+				"|               * *        * *        * *        **********           *        Ä¿ï¿½Â´ï¿½Æ¼      /         ");
 		System.out.println(
 				"-------------------------------------------------------------------------------------------          ");
 		System.out.println("\\    /\\          \\    /\\          \\    /\\");
@@ -278,28 +278,28 @@ public class main {
 
 	}
 
-	public static void ¸ÞÀÎ¸Þ´º() throws IOException {
+	public static void ï¿½ï¿½ï¿½Î¸Þ´ï¿½() throws IOException {
 		while (true) {
 			System.out.println("---------");
-			System.out.println("|1.È¸¿ø°¡ÀÔ|");
+			System.out.println("|1.È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½|");
 			System.out.println("---------");
 			System.out.println("");
 
 			System.out.println("--------");
-			System.out.println("|2.·Î±×ÀÎ|");
+			System.out.println("|2.ï¿½Î±ï¿½ï¿½ï¿½|");
 			System.out.println("--------");
 			System.out.println("");
 
 			System.out.println("------------");
-			System.out.println("|3.¾ÆÀÌµð Ã£±â|");
+			System.out.println("|3.ï¿½ï¿½ï¿½Ìµï¿½ Ã£ï¿½ï¿½|");
 			System.out.println("------------");
 			System.out.println("");
 
 			System.out.println("-------------");
-			System.out.println("|4.ºñ¹Ð¹øÈ£ Ã£±â|");
+			System.out.println("|4.ï¿½ï¿½Ð¹ï¿½È£ Ã£ï¿½ï¿½|");
 			System.out.println("-------------");
 
-			System.out.println("¿øÇÏ½Ã´Â ¸Þ´ºÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä,,,,,,,,,,,@@@,,");
+			System.out.println("ï¿½ï¿½ï¿½Ï½Ã´ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½,,,,,,,,,,,@@@,,");
 			System.out.println("");
 			System.out.println("");
 			System.out.println("");
@@ -311,419 +311,419 @@ public class main {
 			System.out.println("");
 			System.out.println("");
 			System.out.println("");
-			System.out.print("¹øÈ£ : ");
+			System.out.print("ï¿½ï¿½È£ : ");
 			int ch = scanner.nextInt();
 			if (ch == 1) {
-				È¸¿ø°¡ÀÔ();
-			} // È¸¿ø°¡ÀÔ
+				È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½();
+			} // È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			else if (ch == 2) {
-				·Î±×ÀÎ();
-			} // ·Î±×ÀÎ
+				ï¿½Î±ï¿½ï¿½ï¿½();
+			} // ï¿½Î±ï¿½ï¿½ï¿½
 			else if (ch == 3) {
-				¾ÆÀÌµðÃ£±â();
-			} // ¾ÆÀÌµð Ã£±â
+				ï¿½ï¿½ï¿½Ìµï¿½Ã£ï¿½ï¿½();
+			} // ï¿½ï¿½ï¿½Ìµï¿½ Ã£ï¿½ï¿½
 			else if (ch == 4) {
-				ºñ¹Ð¹øÈ£Ã£±â();
-			} // ºñ¹Ð¹øÈ£ Ã£±â ¸Þ¼Òµå
+				ï¿½ï¿½Ð¹ï¿½È£Ã£ï¿½ï¿½();
+			} // ï¿½ï¿½Ð¹ï¿½È£ Ã£ï¿½ï¿½ ï¿½Þ¼Òµï¿½
 			else {
-				System.out.println("Á¦½ÃµÈ ¹øÈ£ ÀÔ·Â ¹Ù¶÷");
+				System.out.println("ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½È£ ï¿½Ô·ï¿½ ï¿½Ù¶ï¿½");
 			}
 		}
 
 	}
 
-	public static void È¸¿ø°¡ÀÔ() throws IOException {
-		System.out.println("----------------È¸¿ø°¡ÀÔ ÆäÀÌÁö----------------");
-		System.out.println("(¾ÆÀÌµð´Â 1~6±ÛÀÚ¸¸ °¡´ÉÇÏ¸ç, ÇÑ±Û,°ø¹é,Æ¯¼ö¹®ÀÚ´Â »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.)");
+	public static void È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½() throws IOException {
+		System.out.println("----------------È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½----------------");
+		System.out.println("(ï¿½ï¿½ï¿½Ìµï¿½ï¿½ 1~6ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½, ï¿½Ñ±ï¿½,ï¿½ï¿½ï¿½ï¿½,Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.)");
 		scanner.nextLine();
-		System.out.print("¾ÆÀÌµð ÀÔ·Â : ");
+		System.out.print("ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ô·ï¿½ : ");
 		String id = scanner.nextLine();
-		int idresult = Controller.È¸¿ø°¡ÀÔ¾ÆÀÌµð(id);
+		int idresult = Controller.È¸ï¿½ï¿½ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½Ìµï¿½(id);
 		if (idresult == 1)
-			System.out.println("¾ÆÀÌµð¿¡ ÇÑ±Û,°ø¹é,Æ¯¼ö¹®ÀÚ´Â µé¾î°¥ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ñ±ï¿½,ï¿½ï¿½ï¿½ï¿½,Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ ï¿½ï¿½î°¥ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		else if (idresult == 2)
-			System.out.println("¾ÆÀÌµðÀÇ ±æÀÌ´Â 1~6±ÛÀÚ¸¸ °¡´ÉÇÕ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ 1~6ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 		else if (idresult == 3)
-			System.out.println("Áßº¹µÈ ¾ÆÀÌµðÀÔ´Ï´Ù.");
+			System.out.println("ï¿½ßºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½Ô´Ï´ï¿½.");
 		else if (idresult == 4) {
-			System.out.println("(ºñ¹Ð¹øÈ£´Â 4~12±ÛÀÚ¸¸ °¡´ÉÇÕ´Ï´Ù.)");
-			System.out.print("ºñ¹Ð¹øÈ£ ÀÔ·Â : ");
+			System.out.println("(ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ 4~12ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.)");
+			System.out.print("ï¿½ï¿½Ð¹ï¿½È£ ï¿½Ô·ï¿½ : ");
 			String pw = scanner.nextLine();
-			System.out.print("ºñ¹Ð¹øÈ£ È®ÀÎ : ");
+			System.out.print("ï¿½ï¿½Ð¹ï¿½È£ È®ï¿½ï¿½ : ");
 			String pwcheck = scanner.nextLine();
-			int pwresult = Controller.È¸¿ø°¡ÀÔºñ¹Ð¹øÈ£(pw, pwcheck);
+			int pwresult = Controller.È¸ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½Ð¹ï¿½È£(pw, pwcheck);
 			if (pwresult == 1)
-				System.out.println("ºñ¹Ð¹øÈ£¿¡ °ø¹éÀº Æ÷ÇÔµÉ ¼ö ¾ø½À´Ï´Ù.");
+				System.out.println("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			else if (pwresult == 2)
-				System.out.println("ºñ¹Ð¹øÈ£¿Í ºñ¹Ð¹øÈ£ È®ÀÎÀÌ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+				System.out.println("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½Ð¹ï¿½È£ È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
 			else if (pwresult == 3) {
-				System.out.print("ÀÌ¸§ ÀÔ·Â : ");
+				System.out.print("ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½ : ");
 				String name = scanner.next();
-				System.out.print("ÀÌ¸ÞÀÏ ÀÔ·Â : ");
+				System.out.print("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
 				String email = scanner.next();
-				System.out.print("ÀüÈ­¹øÈ£ ÀÔ·Â : ");
+				System.out.print("ï¿½ï¿½È­ï¿½ï¿½È£ ï¿½Ô·ï¿½ : ");
 				String phone = scanner.next();
-				boolean result = Controller.È¸¿ø°¡ÀÔ(id, pw, pwcheck, name, email, phone);
+				boolean result = Controller.È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(id, pw, pwcheck, name, email, phone);
 
 				if (result)
-					System.out.println("È¸¿ø°¡ÀÔ¿¡ ¼º°øÇÏ¿´½À´Ï´Ù.");
+					System.out.println("È¸ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 				else
-					System.out.println("ÇØ´ç ÀüÈ­¹øÈ£·Î ´õÀÌ»ó °¡ÀÔÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.");
+					System.out.println("ï¿½Ø´ï¿½ ï¿½ï¿½È­ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			}
 			else if(pwresult==4) {
-				System.out.println("ºñ¹Ð¹øÈ£ÀÇ ±æÀÌ´Â 4~12±ÛÀÚ¸¸ °¡´ÉÇÕ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ 4~12ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			}
 		}
 
 	}
 
-	public static void ·Î±×ÀÎ() throws IOException {
+	public static void ï¿½Î±ï¿½ï¿½ï¿½() throws IOException {
 
 		String id = null;
 		String pw = null;
-		System.out.print("¾ÆÀÌµð ÀÔ·Â : ");
+		System.out.print("ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ô·ï¿½ : ");
 		id = scanner.next();
-		System.out.print("ºñ¹Ð¹øÈ£ ÀÔ·Â : ");
+		System.out.print("ï¿½ï¿½Ð¹ï¿½È£ ï¿½Ô·ï¿½ : ");
 		pw = scanner.next();
-		int result = Controller.·Î±×ÀÎ(id, pw);
+		int result = Controller.ï¿½Î±ï¿½ï¿½ï¿½(id, pw);
 		if (result == 1) {
-			System.out.println(id + "´Ô È¯¿µÇÕ´Ï´Ù.");
+			System.out.println(id + "ï¿½ï¿½ È¯ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			System.out.println();
-			·Î±×ÀÎ¸Þ´º(id);
+			ï¿½Î±ï¿½ï¿½Î¸Þ´ï¿½(id);
 		} else if (result == 2) {
-			System.out.println("°¡ÀÔµÈ ¾ÆÀÌµð°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		} else if (result == 3) {
-			System.out.println("ºñ¹Ð¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 
-	public static void ¾ÆÀÌµðÃ£±â() {
-		System.out.print("ÀÌ¸§ ÀÔ·Â : ");
+	public static void ï¿½ï¿½ï¿½Ìµï¿½Ã£ï¿½ï¿½() {
+		System.out.print("ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½ : ");
 		String name = scanner.next();
-		System.out.print("ÀüÈ­¹øÈ£ ÀÔ·Â : ");
+		System.out.print("ï¿½ï¿½È­ï¿½ï¿½È£ ï¿½Ô·ï¿½ : ");
 		String phone = scanner.next();
-		System.out.print("ÀÌ¸ÞÀÏ ÀÔ·Â : ");
+		System.out.print("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
 		String email = scanner.next();
-		String result = Controller.¾ÆÀÌµðÃ£±â(name, phone, email);
+		String result = Controller.ï¿½ï¿½ï¿½Ìµï¿½Ã£ï¿½ï¿½(name, phone, email);
 		if (result.equals("1")) {
-			System.out.println("ÀÏÄ¡ÇÏ´Â Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		} else {
-			System.out.println("È¸¿ø´ÔÀÇ ¾ÆÀÌµð´Â \"" + result + "\" ÀÔ´Ï´Ù.");
+			System.out.println("È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½ \"" + result + "\" ï¿½Ô´Ï´ï¿½.");
 		}
 	}
 
-	public static void ºñ¹Ð¹øÈ£Ã£±â() {
-		System.out.print("¾ÆÀÌµð ÀÔ·Â : ");
+	public static void ï¿½ï¿½Ð¹ï¿½È£Ã£ï¿½ï¿½() {
+		System.out.print("ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ô·ï¿½ : ");
 		String id = scanner.next();
-		System.out.print("ÀüÈ­¹øÈ£ ÀÔ·Â : ");
+		System.out.print("ï¿½ï¿½È­ï¿½ï¿½È£ ï¿½Ô·ï¿½ : ");
 		String phone = scanner.next();
-		System.out.print("ÀÌ¸ÞÀÏ ÀÔ·Â : ");
+		System.out.print("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
 		String email = scanner.next();
 
-		String result = Controller.ºñ¹Ð¹øÈ£Ã£±â(id, phone, email);
+		String result = Controller.ï¿½ï¿½Ð¹ï¿½È£Ã£ï¿½ï¿½(id, phone, email);
 		if (result.equals("1")) {
-			System.out.println("ÀÏÄ¡ÇÏ´Â Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		} else {
-			System.out.println("È¸¿ø´ÔÀÇ ºñ¹Ð¹øÈ£´Â \"" + result + "\" ÀÔ´Ï´Ù.");
+			System.out.println("È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ \"" + result + "\" ï¿½Ô´Ï´ï¿½.");
 		}
 	}
 
-	public static void Ä«Å×°í¸®º¸±â(String id, int Ä«Å×°í¸®¼±ÅÃ) throws IOException {
-		System.out.println("1.±Û¾²±â 2.±Ûº¸±â 3.°Ë»ö 4.ÀÌÀüÆäÀÌÁö 5.´ÙÀ½ÆäÀÌÁö 6.µÚ·Î°¡±â");
-		int Çàµ¿¼±ÅÃ = scanner.nextInt();// ¼±ÅÃÀÔ·Â¹Þ±â
-		if (Çàµ¿¼±ÅÃ == 1) {
-			System.out.println("Á¦¸ñ: ");
-			String title = scanner.next(); // Á¦¸ñ ÀÔ·Â¹Þ±â
-			System.out.println("³»¿ë: ");
-			String content = scanner.next();// ³»¿ë ÀÔ·Â¹Þ±â
-			boolean pass = Controller.±Û¾²±â(id, title, content, Controller.Ä«Å×°í¸®[Ä«Å×°í¸®¼±ÅÃ]);
-			if (pass) { // ¼º°ø½Ã
-				System.out.println("±ÛÀÛ¼º¼º°ø");
-			} else { // ½ÇÆÐ½Ã
-				System.out.println("±ÛÀÛ¼º½ÇÆÐ");
+	public static void Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½(String id, int Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½) throws IOException {
+		System.out.println("1.ï¿½Û¾ï¿½ï¿½ï¿½ 2.ï¿½Ûºï¿½ï¿½ï¿½ 3.ï¿½Ë»ï¿½ 4.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 5.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 6.ï¿½Ú·Î°ï¿½ï¿½ï¿½");
+		int ï¿½àµ¿ï¿½ï¿½ï¿½ï¿½ = scanner.nextInt();// ï¿½ï¿½ï¿½ï¿½ï¿½Ô·Â¹Þ±ï¿½
+		if (ï¿½àµ¿ï¿½ï¿½ï¿½ï¿½ == 1) {
+			System.out.println("ï¿½ï¿½ï¿½ï¿½: ");
+			String title = scanner.next(); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ±ï¿½
+			System.out.println("ï¿½ï¿½ï¿½ï¿½: ");
+			String content = scanner.next();// ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ±ï¿½
+			boolean pass = Controller.ï¿½Û¾ï¿½ï¿½ï¿½(id, title, content, Controller.Ä«ï¿½×°ï¿½[Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½]);
+			if (pass) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				System.out.println("ï¿½ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½");
+			} else { // ï¿½ï¿½ï¿½Ð½ï¿½
+				System.out.println("ï¿½ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½");
 			}
-		} else if (Çàµ¿¼±ÅÃ == 2) { // ±Ûº¸±â
-			±Ûº¸±â(id, Ä«Å×°í¸®¼±ÅÃ);
-		} else if (Çàµ¿¼±ÅÃ == 3) { // °Ë»ö
-			System.out.println("Á¦¸ñ °Ë»ö : ");
+		} else if (ï¿½àµ¿ï¿½ï¿½ï¿½ï¿½ == 2) { // ï¿½Ûºï¿½ï¿½ï¿½
+			ï¿½Ûºï¿½ï¿½ï¿½(id, Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½);
+		} else if (ï¿½àµ¿ï¿½ï¿½ï¿½ï¿½ == 3) { // ï¿½Ë»ï¿½
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ : ");
 			String serch = scanner.next();
 
-			ArrayList<Board> result = Controller.°Ë»ö(serch);
+			ArrayList<Board> result = Controller.ï¿½Ë»ï¿½(serch);
 
-			System.out.println("---------------------°Ë»ö °á°ú---------------------------");
+			System.out.println("---------------------ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½---------------------------");
 			for (Board temp : result) {
 				System.out.println(temp.getTitle() + "\t" + temp.getContent() + "\t" + temp.getIndex());
 			}
 			System.out.println("-------------------------------------------------------");
 
-		} else if (Çàµ¿¼±ÅÃ == 4) { // ÀÌÀüÆäÀÌÁö
+		} else if (ï¿½àµ¿ï¿½ï¿½ï¿½ï¿½ == 4) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		} else if (Çàµ¿¼±ÅÃ == 5) { // ´ÙÀ½ÆäÀÌÁö
+		} else if (ï¿½àµ¿ï¿½ï¿½ï¿½ï¿½ == 5) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		} else if (Çàµ¿¼±ÅÃ == 6) { // µÚ·Î°¡±â
-			·Î±×ÀÎ¸Þ´º(id);
+		} else if (ï¿½àµ¿ï¿½ï¿½ï¿½ï¿½ == 6) { // ï¿½Ú·Î°ï¿½ï¿½ï¿½
+			ï¿½Î±ï¿½ï¿½Î¸Þ´ï¿½(id);
 		} else {
-			System.out.println("¾Ë¼ö¾ø´Â Çàµ¿");
+			System.out.println("ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½àµ¿");
 		}
 	}
 
-	public static void ±Ûº¸±â(String id, int Ä«Å×°í¸®¼±ÅÃ) throws IOException {
-		System.out.println("±Û¹øÈ£ÀÔ·Â: ");
+	public static void ï¿½Ûºï¿½ï¿½ï¿½(String id, int Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½) throws IOException {
+		System.out.println("ï¿½Û¹ï¿½È£ï¿½Ô·ï¿½: ");
 		int index = scanner.nextInt();
-		boolean pass = Controller.±Û»ó¼¼º¸±â(id, index);
-		if (pass) { // ±ÛÃ£±â ¼º°ø½Ã
+		boolean pass = Controller.ï¿½Û»ó¼¼ºï¿½ï¿½ï¿½(id, index);
+		if (pass) { // ï¿½ï¿½Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			while (true) {
 				for (Board temp : Controller.boardlist) {
 					if (temp.getIndex() == index) {
-						System.out.println("ÀÛ¼ºÀÏ: " + temp.getDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd | hh:mm")) + "\n");
+						System.out.println("ï¿½Û¼ï¿½ï¿½ï¿½: " + temp.getDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd | hh:mm")) + "\n");
 						System.out.println(
-								"¹øÈ£: " + temp.getIndex() + " Á¦¸ñ: " + temp.getTitle() + " Ä«Å×°í¸®: " + temp.getCategory() +"\n");
-						System.out.println("³»¿ë: " + temp.getContent());
+								"ï¿½ï¿½È£: " + temp.getIndex() + " ï¿½ï¿½ï¿½ï¿½: " + temp.getTitle() + " Ä«ï¿½×°ï¿½: " + temp.getCategory() +"\n");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½: " + temp.getContent());
 						System.out.println(
-								"ÃßÃµ¼ö: " + temp.getGood() + " ºñÃß: " + temp.getBad() + " ½Å°í¼ö: " + temp.getReport());
-						System.out.println("----´ñ±ÛÃ¢-----------------------------------------------------------");
+								"ï¿½ï¿½Ãµï¿½ï¿½: " + temp.getGood() + " ï¿½ï¿½ï¿½ï¿½: " + temp.getBad() + " ï¿½Å°ï¿½ï¿½: " + temp.getReport());
+						System.out.println("----ï¿½ï¿½ï¿½Ã¢-----------------------------------------------------------");
 
 						if (temp.getReplylist() == null) {
 
 						} else {
-							int ÀÎµ¦½º = 0;
+							int ï¿½Îµï¿½ï¿½ï¿½ = 0;
 							for (Reply temp2 : temp.getReplylist()) {
-								System.out.println(ÀÎµ¦½º + " ³»¿ë: " + temp2.getContent());
-								ÀÎµ¦½º++;
-							} // ´ñ±Û Ãâ·Â end
-						} // ´ñ±Û Ãâ·Â if¹® end
+								System.out.println(ï¿½Îµï¿½ï¿½ï¿½ + " ï¿½ï¿½ï¿½ï¿½: " + temp2.getContent());
+								ï¿½Îµï¿½ï¿½ï¿½++;
+							} // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ end
+						} // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ifï¿½ï¿½ end
 						break;
 					}
-				} // Ãâ·Â for¹® end
+				} // ï¿½ï¿½ï¿½ forï¿½ï¿½ end
 
-				System.out.println("1.¼öÁ¤ 2.»èÁ¦ 3.´ñ±Û´Þ±â 4.´ñ±Û¼öÁ¤ 5.´ñ±Û»èÁ¦ 6.½Å°íÇÏ±â 7.µÚ·Î°¡±â 8.ÃßÃµ 9.ºñÃß");
-				int ¼±ÅÃ = scanner.nextInt();
-				////////////////////////////// ±Û ¼öÁ¤
+				System.out.println("1.ï¿½ï¿½ï¿½ï¿½ 2.ï¿½ï¿½ï¿½ï¿½ 3.ï¿½ï¿½Û´Þ±ï¿½ 4.ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ 5.ï¿½ï¿½Û»ï¿½ï¿½ï¿½ 6.ï¿½Å°ï¿½ï¿½Ï±ï¿½ 7.ï¿½Ú·Î°ï¿½ï¿½ï¿½ 8.ï¿½ï¿½Ãµ 9.ï¿½ï¿½ï¿½ï¿½");
+				int ï¿½ï¿½ï¿½ï¿½ = scanner.nextInt();
+				////////////////////////////// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				////////////////////////////// //////////////////////////////////////////////////
-				if (¼±ÅÃ == 1) {
-					boolean result = Controller.±Û¼öÁ¤¾ÆÀÌµðÃ¼Å©(id, index);
+				if (ï¿½ï¿½ï¿½ï¿½ == 1) {
+					boolean result = Controller.ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½Ã¼Å©(id, index);
 					if (result) {
-						System.out.print("ºñ¹Ð¹øÈ£ ÀÔ·Â : ");
+						System.out.print("ï¿½ï¿½Ð¹ï¿½È£ ï¿½Ô·ï¿½ : ");
 						String pw = scanner.next();
-						boolean result2 = Controller.±Û¼öÁ¤ºñ¹Ð¹øÈ£Ã¼Å©(id, pw, index);
+						boolean result2 = Controller.ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½È£Ã¼Å©(id, pw, index);
 						if (result2) {
-							System.out.print("¼öÁ¤ÇÒ Á¦¸ñ ÀÔ·Â : ");
+							System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
 							scanner.nextLine();
 							String title = scanner.nextLine();
-							System.out.print("¼öÁ¤ÇÒ ³»¿ë ÀÔ·Â : ");
+							System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
 							String content = scanner.nextLine();
-							Controller.±Û¼öÁ¤(index, title, content);
-							System.out.println("¼öÁ¤ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+							Controller.ï¿½Û¼ï¿½ï¿½ï¿½(index, title, content);
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 						}
 					} else
-						System.out.println("º»ÀÎÀÌ ÀÛ¼ºÇÑ ±Û¸¸ ¼öÁ¤ÀÌ °¡´ÉÇÕ´Ï´Ù.");
-					//////////////////////////////////// ±Û »èÁ¦
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½Û¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
+					//////////////////////////////////// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					//////////////////////////////////// ////////////////////////////////////////
-				} else if (¼±ÅÃ == 2) {
-					boolean result = Controller.±Û¼öÁ¤¾ÆÀÌµðÃ¼Å©(id, index);
+				} else if (ï¿½ï¿½ï¿½ï¿½ == 2) {
+					boolean result = Controller.ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½Ã¼Å©(id, index);
 					if (result) {
-						System.out.print("ºñ¹Ð¹øÈ£ ÀÔ·Â : ");
+						System.out.print("ï¿½ï¿½Ð¹ï¿½È£ ï¿½Ô·ï¿½ : ");
 						String pw = scanner.next();
-						boolean result2 = Controller.±Û¼öÁ¤ºñ¹Ð¹øÈ£Ã¼Å©(id, pw, index);
+						boolean result2 = Controller.ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½È£Ã¼Å©(id, pw, index);
 						if (result2) {
-							Controller.±Û»èÁ¦(id, pw, index);
-							System.out.println("»èÁ¦°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+							Controller.ï¿½Û»ï¿½ï¿½ï¿½(id, pw, index);
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 							break;
 						} else
-							System.out.println("ºñ¹Ð¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+							System.out.println("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
 
 					} else
-						System.out.println("º»ÀÎÀÌ ÀÛ¼ºÇÑ ±Û¸¸ »èÁ¦°¡ °¡´ÉÇÕ´Ï´Ù.");
-					/////////////////////////////////// ´ñ±Û ´Þ±â
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½Û¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
+					/////////////////////////////////// ï¿½ï¿½ï¿½ ï¿½Þ±ï¿½
 					/////////////////////////////////// /////////////////////////////////////////
-				} else if (¼±ÅÃ == 3) {
-					System.out.println("³»¿ë: ");
+				} else if (ï¿½ï¿½ï¿½ï¿½ == 3) {
+					System.out.println("ï¿½ï¿½ï¿½ï¿½: ");
 					scanner.nextLine();
 					String con = scanner.nextLine();
-					Controller.´ñ±ÛÀÛ¼º(con, index, id);
-					/////////////////////////////////// ´ñ±Û ¼öÁ¤
+					Controller.ï¿½ï¿½ï¿½ï¿½Û¼ï¿½(con, index, id);
+					/////////////////////////////////// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					/////////////////////////////////// ///////////////////////////////////////////
-				} else if (¼±ÅÃ == 4) {
-					System.out.println("¼öÁ¤ÇÒ´ñ±ÛÀÎµ¦½º: ");
-					int ´ñ±ÛÀÎµ¦½º = scanner.nextInt();
-					System.out.println("¼öÁ¤ÇÒ³»¿ë: ");
-					String ´ñ±Û¼öÁ¤ = scanner.next();
-					boolean pass2 = Controller.´ñ±Û¼öÁ¤(index, ´ñ±ÛÀÎµ¦½º, ´ñ±Û¼öÁ¤, id);
+				} else if (ï¿½ï¿½ï¿½ï¿½ == 4) {
+					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ò´ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½: ");
+					int ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ = scanner.nextInt();
+					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½: ");
+					String ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ = scanner.next();
+					boolean pass2 = Controller.ï¿½ï¿½Û¼ï¿½ï¿½ï¿½(index, ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½, ï¿½ï¿½Û¼ï¿½ï¿½ï¿½, id);
 					if (pass2) {
-						System.out.println("´ñ±Û¼öÁ¤ ¼º°ø");
+						System.out.println("ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 					} else {
-						System.out.println("´ñ±Û¼öÁ¤ ½ÇÆÐ");
+						System.out.println("ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 					}
-					///////////////////////////////////// ´ñ±Û»èÁ¦//////////////////////////////////////////////////
-				} else if (¼±ÅÃ == 5) {
-					System.out.println("¼öÁ¤ÇÒ´ñ±ÛÀÎµ¦½º: ");
-					int ´ñ±ÛÀÎµ¦½º = scanner.nextInt();
-					boolean pass2 = Controller.´ñ±Û»èÁ¦(index, ´ñ±ÛÀÎµ¦½º, id);
+					///////////////////////////////////// ï¿½ï¿½Û»ï¿½ï¿½ï¿½//////////////////////////////////////////////////
+				} else if (ï¿½ï¿½ï¿½ï¿½ == 5) {
+					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ò´ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½: ");
+					int ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ = scanner.nextInt();
+					boolean pass2 = Controller.ï¿½ï¿½Û»ï¿½ï¿½ï¿½(index, ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½, id);
 					if (pass2)
-						System.out.println("´ñ±Û»èÁ¦ ¼º°ø");
+						System.out.println("ï¿½ï¿½Û»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 					else
-						System.out.println("´ñ±Û»èÁ¦ ½ÇÆÐ");
-				} else if (¼±ÅÃ == 6) { // ½Å°í
-					System.out.println("½Å°íÇÑ À¯Àú´Â ÀÚµ¿À¸·Î Â÷´ÜµË´Ï´Ù. Á¤¸» ½Å°íÇÏ½Ã°Ú½À´Ï±î?");
-					System.out.println("1.½Å°íÇÏ±â 2.Ãë¼Ò");
+						System.out.println("ï¿½ï¿½Û»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+				} else if (ï¿½ï¿½ï¿½ï¿½ == 6) { // ï¿½Å°ï¿½
+					System.out.println("ï¿½Å°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÜµË´Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½Ï½Ã°Ú½ï¿½ï¿½Ï±ï¿½?");
+					System.out.println("1.ï¿½Å°ï¿½ï¿½Ï±ï¿½ 2.ï¿½ï¿½ï¿½");
 					int ch = scanner.nextInt();
 					if (ch == 1) {
-						boolean result = Controller.½Å°í(id, index);
+						boolean result = Controller.ï¿½Å°ï¿½(id, index);
 						if (result) {
-							System.out.println("\t\t\t½Å°í°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
-							Ä«Å×°í¸®º¸±â(id, Ä«Å×°í¸®¼±ÅÃ);
+							System.out.println("\t\t\tï¿½Å°ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+							Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½(id, Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½);
 						} else
-							System.out.println("ÀÚ½ÅÀÇ ¾ÆÀÌµð´Â ½Å°í°¡ ºÒ°¡´ÉÇÕ´Ï´Ù.");
+							System.out.println("ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½ ï¿½Å°ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 
 					} else if (ch == 2) {
 
 					}
 
-				} else if (¼±ÅÃ == 7) {
+				} else if (ï¿½ï¿½ï¿½ï¿½ == 7) {
 					break;
-				} // µÚ·Î°¡±â
-				else if (¼±ÅÃ == 8) {
-					Controller.ÃßÃµºñÃß(true, index, id);
-				} else if (¼±ÅÃ == 9) {
-					Controller.ÃßÃµºñÃß(false, index, id);
+				} // ï¿½Ú·Î°ï¿½ï¿½ï¿½
+				else if (ï¿½ï¿½ï¿½ï¿½ == 8) {
+					Controller.ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½(true, index, id);
+				} else if (ï¿½ï¿½ï¿½ï¿½ == 9) {
+					Controller.ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½(false, index, id);
 				} else
-					System.out.println("¾Ë¼ö¾ø´Â Çàµ¿");
+					System.out.println("ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½àµ¿");
 			} // while end
 
-		} // ±ÛÃ£±â ¼º°ø if Ãâ·Â¹® end
-		else {// Ã£±â ½ÇÆÐ½Ã
-			System.out.println("ÇØ´ç±ÛÀ» Ã£Áö¸øÇß½À´Ï´Ù");
+		} // ï¿½ï¿½Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ if ï¿½ï¿½Â¹ï¿½ end
+		else {// Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½Ð½ï¿½
+			System.out.println("ï¿½Ø´ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½");
 		}
 	}
 
-	public static void ³îÀÌ¹æ¸Þ´º(String id) throws IOException {
-		System.out.println("1.Æ÷ÀÎÆ®º¹±Ç 2.Æ÷ÀÎÆ®·©Å· 3. º¸¹°Ã£±â 4.µÚ·Î°¡±â");
+	public static void ï¿½ï¿½ï¿½Ì¹ï¿½Þ´ï¿½(String id) throws IOException {
+		System.out.println("1.ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ 2.ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½Å· 3. ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ 4.ï¿½Ú·Î°ï¿½ï¿½ï¿½");
 		int ch = scanner.nextInt();
-		if (ch == 1) { // Æ÷ÀÎÆ®º¹±Ç
-			String[] result = Controller.º¹±Ç(id);
+		if (ch == 1) { // ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½
+			String[] result = Controller.ï¿½ï¿½ï¿½ï¿½(id);
 			if (result[0].equals("[ ]")) {
-				System.out.println("\t\t\tº¸À¯ Æ÷ÀÎÆ®°¡ ºÎÁ·ÇØ¼­ ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.");
+				System.out.println("\t\t\tï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			} else {
 				System.out.print("\t\t\t");
 				for (int i = 0; i < result.length; i++) {
 					System.out.print(result[i]);
 				}
-				int result2 = Controller.º¹±Ç°á°ú(result, id);
+				int result2 = Controller.ï¿½ï¿½ï¿½Ç°ï¿½ï¿½(result, id);
 
 				if (result2 == 1)
-					System.out.println("\n1µî 1000Æ÷ÀÎÆ® ´çÃ·");
+					System.out.println("\n1ï¿½ï¿½ 1000ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Ã·");
 				else if (result2 == 2)
-					System.out.println("\n2µî 300Æ÷ÀÎÆ® ´çÃ·");
+					System.out.println("\n2ï¿½ï¿½ 300ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Ã·");
 				else if (result2 == 3)
-					System.out.println("\n3µî 100Æ÷ÀÎÆ® ´çÃ·");
+					System.out.println("\n3ï¿½ï¿½ 100ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Ã·");
 				else if (result2 == 4)
-					System.out.println("\n4µî 10Æ÷ÀÎÆ® ´çÃ·");
+					System.out.println("\n4ï¿½ï¿½ 10ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Ã·");
 				else if (result2 == 5)
-					System.out.println("\n²Î");
+					System.out.println("\nï¿½ï¿½");
 			}
-			³îÀÌ¹æ¸Þ´º(id);
+			ï¿½ï¿½ï¿½Ì¹ï¿½Þ´ï¿½(id);
 		}
 
 		else if (ch == 2) {
-			ArrayList<Acount> ranking = Controller.Æ÷ÀÎÆ®·©Å·();
+			ArrayList<Acount> ranking = Controller.ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½Å·();
 			int i = 1;
-			System.out.println("µî¼ö\t¾ÆÀÌµð\tÆ÷ÀÎÆ®");
+			System.out.println("ï¿½ï¿½ï¿½\tï¿½ï¿½ï¿½Ìµï¿½\tï¿½ï¿½ï¿½ï¿½Æ®");
 			for (Acount temp : ranking) {
-				System.out.println(i + "µî\t" + temp.getId() + "\t" + temp.getPoint());
+				System.out.println(i + "ï¿½ï¿½\t" + temp.getId() + "\t" + temp.getPoint());
 				if(i == 4) {
 					break;
 				}
 				i++;
 			}
-			³îÀÌ¹æ¸Þ´º(id);
+			ï¿½ï¿½ï¿½Ì¹ï¿½Þ´ï¿½(id);
 
 		} else if (ch == 3) {
-			// 1.°ÔÀÓÆÇ ÃÊ±âÈ­
-			while (true) { // ÇÁ·Î±×·¥½ÇÇà
-				int °ÔÀÓÆÇÀÎµ¦½º = 0;
-				for (String temp : Controller.°ÔÀÓÆÇ) { // ÀüºÎ for ¹®µ¹·Á¼­
-					if (temp != "[¡á]") {
-						Controller.°ÔÀÓÆÇ[°ÔÀÓÆÇÀÎµ¦½º] = "[¡á]";
-					} // "[¡á]" ÃÊ±âÈ­
-					°ÔÀÓÆÇÀÎµ¦½º++; // ´ÙÀ½ÀÎµ¦½º
+			// 1.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+			while (true) { // ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ï¿½ï¿½
+				int ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ = 0;
+				for (String temp : Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) { // ï¿½ï¿½ï¿½ï¿½ for ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					if (temp != "[ï¿½ï¿½]") {
+						Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½] = "[ï¿½ï¿½]";
+					} // "[ï¿½ï¿½]" ï¿½Ê±ï¿½È­
+					ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½++; // ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½
 				}
-				System.out.println("º¸¹° Ã£±â 1¹ø 3È¸ 30¿ø");
-				System.out.println("1.»Ì±â 2.µÚ·Î°¡±â");
-				int ch2 = scanner.nextInt(); // ¼±ÅÃÀÔ·Â¹Þ±â
-				if (ch2 == 1) {// »Ì±â ½ÃÀÛ
-					boolean pass = true; // µ· pass Ã¼Å©
-					for (Acount temp : Controller.acountlist) { // È¸¿øµ¹·Á¼­
-						if (temp.getId().equals(id)) { // id ÀÏÄ¡ÇÏ¸é
-							if (temp.getPoint() < 30) { // µ· Ã¼Å©
-								System.out.println("µ·ºÎÁ·");
-								pass = false; // ½ÇÇà½ÇÇà ½ºÀ§Ä¡ ¿ªÈ°
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ 1ï¿½ï¿½ 3È¸ 30ï¿½ï¿½");
+				System.out.println("1.ï¿½Ì±ï¿½ 2.ï¿½Ú·Î°ï¿½ï¿½ï¿½");
+				int ch2 = scanner.nextInt(); // ï¿½ï¿½ï¿½ï¿½ï¿½Ô·Â¹Þ±ï¿½
+				if (ch2 == 1) {// ï¿½Ì±ï¿½ ï¿½ï¿½ï¿½ï¿½
+					boolean pass = true; // ï¿½ï¿½ pass Ã¼Å©
+					for (Acount temp : Controller.acountlist) { // È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+						if (temp.getId().equals(id)) { // id ï¿½ï¿½Ä¡ï¿½Ï¸ï¿½
+							if (temp.getPoint() < 30) { // ï¿½ï¿½ Ã¼Å©
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+								pass = false; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½ï¿½È°
 							}
 						}
 					}
-					if (pass) {// µ·ÀÌ ÀÖ´Ù¸é
-						int ±âÈ¸ = 3;
-						int[] µî¼ö = Controller.º¸¹°Ã£±â°ÔÀÓ¼³Á¤(); // ´çÃ·¹øÈ£ ÃÊ±âÈ­
-						for (int j = 0; j < 3; j++, ±âÈ¸--) { // 3¹ø µ¹¸®±â
-							// °ÔÀÓÆÇ Ãâ·Â
-							for (int i = 0; i < Controller.°ÔÀÓÆÇ.length; i++) {
-								System.out.print(Controller.°ÔÀÓÆÇ[i]);
+					if (pass) {// ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½
+						int ï¿½ï¿½È¸ = 3;
+						int[] ï¿½ï¿½ï¿½ = Controller.ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½ï¿½ï¿½(); // ï¿½ï¿½Ã·ï¿½ï¿½È£ ï¿½Ê±ï¿½È­
+						for (int j = 0; j < 3; j++, ï¿½ï¿½È¸--) { // 3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+							// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+							for (int i = 0; i < Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.length; i++) {
+								System.out.print(Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[i]);
 								if (i % 5 == 4) {
 									System.out.println();
-								} // ÁÙ¹Ù²Þ
+								} // ï¿½Ù¹Ù²ï¿½
 							}
-							System.out.println("³²Àº±âÈ¸: " + ±âÈ¸ + " | ÀÎµ¦½º¼±ÅÃ: ");
-							int ¼±ÅÃ = scanner.nextInt(); // ÀÎµ¦½º¹Þ±â
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸: " + ï¿½ï¿½È¸ + " | ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ");
+							int ï¿½ï¿½ï¿½ï¿½ = scanner.nextInt(); // ï¿½Îµï¿½ï¿½ï¿½ï¿½Þ±ï¿½
 							boolean pass2 = false;
-							if(¼±ÅÃ > 14) {
+							if(ï¿½ï¿½ï¿½ï¿½ > 14) {
 								while(true) {
-									System.out.println("0~14±îÁö¸¸ ´Ù½ÃÀÔ·Â"); ¼±ÅÃ = scanner.nextInt();
-									if(¼±ÅÃ>=0 && ¼±ÅÃ < 15) {
+									System.out.println("0~14ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ï¿½Ô·ï¿½"); ï¿½ï¿½ï¿½ï¿½ = scanner.nextInt();
+									if(ï¿½ï¿½ï¿½ï¿½>=0 && ï¿½ï¿½ï¿½ï¿½ < 15) {
 										break;
 									}
 								}
 								
 							}
-							int ´çÃ·¿©ºÎ = Controller.º¸¹°Ã£±â(¼±ÅÃ, id, µî¼ö); // º¸¹°Ã£±â ¸Þ¼Òµå È£Ãâ
-							if (±âÈ¸ == 0) {
+							int ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ = Controller.ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½, id, ï¿½ï¿½ï¿½); // ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ ï¿½Þ¼Òµï¿½ È£ï¿½ï¿½
+							if (ï¿½ï¿½È¸ == 0) {
 								break;
-							} // °ÔÀÓ³¡±âÈ¸°¡ ³¡³ª¸é
-							if (´çÃ·¿©ºÎ == 1) {
-								System.out.println("1µî ´çÃ·");
-								Controller.È¸¿øÆÄÀÏÃ³¸®(id);
-							} else if (´çÃ·¿©ºÎ == 2) {
-								System.out.println("2µî ´çÃ·");
-								Controller.È¸¿øÆÄÀÏÃ³¸®(id);
-							} else if (´çÃ·¿©ºÎ == 3) {
-								System.out.println("3µî ´çÃ·");
-								Controller.È¸¿øÆÄÀÏÃ³¸®(id);
-							} else if (´çÃ·¿©ºÎ == -1) {
-								System.out.println("²Î");
+							} // ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+							if (ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ == 1) {
+								System.out.println("1ï¿½ï¿½ ï¿½ï¿½Ã·");
+								Controller.È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½(id);
+							} else if (ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ == 2) {
+								System.out.println("2ï¿½ï¿½ ï¿½ï¿½Ã·");
+								Controller.È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½(id);
+							} else if (ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ == 3) {
+								System.out.println("3ï¿½ï¿½ ï¿½ï¿½Ã·");
+								Controller.È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½(id);
+							} else if (ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ == -1) {
+								System.out.println("ï¿½ï¿½");
 							}
 						}
-						// °ÔÀÓÆÇ Ãâ·Â
-						for (int i = 0; i < Controller.°ÔÀÓÆÇ.length; i++) {
-							System.out.print(Controller.°ÔÀÓÆÇ[i]);
+						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+						for (int i = 0; i < Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.length; i++) {
+							System.out.print(Controller.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[i]);
 							if (i % 5 == 4) {
 								System.out.println();
-							} // ÁÙ¹Ù²Þ
+							} // ï¿½Ù¹Ù²ï¿½
 						}
-						System.out.println("°ÔÀÓÁ¾·á");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					} else {
-						System.out.println("µ·ºÎÁ·");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					}
-				} else if (ch2 == 2) { // µÚ·Î°¡±â
+				} else if (ch2 == 2) { // ï¿½Ú·Î°ï¿½ï¿½ï¿½
 					break;
 				} else {
-					System.out.println("¾Ë¼ö¾ø´Â ¼±ÅÃ");
+					System.out.println("ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 				}
 			}
 		}
 
 		else if (ch == 4) {
-			·Î±×ÀÎ¸Þ´º(id);
+			ï¿½Î±ï¿½ï¿½Î¸Þ´ï¿½(id);
 		} else {
-			System.out.println("\t\t\tÁ¦½ÃµÈ ¹øÈ£ ÀÔ·Â ¹Ù¶÷");
-			³îÀÌ¹æ¸Þ´º(id);
+			System.out.println("\t\t\tï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½È£ ï¿½Ô·ï¿½ ï¿½Ù¶ï¿½");
+			ï¿½ï¿½ï¿½Ì¹ï¿½Þ´ï¿½(id);
 		}
 
 	}
